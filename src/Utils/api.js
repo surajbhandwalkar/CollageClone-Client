@@ -1,7 +1,9 @@
 import axios from "axios";
 
 
-const API_BASE_URL="http://localhost:5402";
+// const API_BASE_URL="http://localhost:5402";
+const API_BASE_URL = process.env.REACT_APP_SERVER_URL;
+
 
 //fetch all collages
 export const fetchCollages = async()=>{
@@ -53,7 +55,7 @@ export const loginUser=async(Credential)=>{
         const response=await axios.post(`${API_BASE_URL}/login`);
         return response.data;
     }catch(error){
-        console .log("Login failed",error);
+        console.log("Login failed",error);
         return{error:"login failed"};
     }
 }
