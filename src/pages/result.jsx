@@ -1,11 +1,11 @@
-import { useLocation,useNavigate,useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState,useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
 function Results(){
-    const location= useLocation();
-    const queryParams = new URLSearchParams(location.search);
+   // const location= useLocation();
+   // const queryParams = new URLSearchParams(location.search);
     const {city,category}=useParams();
     console.log("city,category-->>>",city,category);
     const [collages,setcollages]=useState([]);
