@@ -17,9 +17,9 @@ function Results(){
             try{
                 let url="";
                 if(city){
-                    url=`http://localhost:5402/getcollagesByCity/${city}`;
+                    url=(`${process.env.REACT_APP_SERVER_URL}/getcollagesByCity/${city}`);
                      }else if(category){
-                        url=`http://localhost:5402/getcollagesByCategory/${category}`
+                        url=(`${process.env.REACT_APP_SERVER_URL}/getcollagesByCategory/${category}`);
                      }
                      if(url){
                         const responce = await axios.get(url);
