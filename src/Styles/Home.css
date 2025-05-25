@@ -7,14 +7,15 @@
   /* Hero Section */
   .hero-section {
     background: url("../Images/suraj.jpg") center/cover no-repeat;
-    height: 300px;
+    height: 200px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: rgb(21, 19, 19);
   
-    background-position: center 40%;
+    /* background-position: center ; */
   }
   
   .hero-section h1 {
